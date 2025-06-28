@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galeria</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Galeria de Destinos</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Galeria de Destinos</h2>
+
+    <section>
+      <h3>🌅 Norte e Nordeste</h3>
+      <div class="galeria">
+        <img src="imagens/maragogi.jpg" alt="Praias cristalinas de Maragogi (AL)" onclick="abrirModal(this)" />
+        <img src="imagens/jericoacoara.jpg" alt="Dunas de Jericoacoara (CE)" onclick="abrirModal(this)" />
+        <img src="imagens/lencois_maranhenses.jpg" alt="Lagoas dos Lençóis Maranhenses (MA)" onclick="abrirModal(this)" />
+        <img src="imagens/alter_do_chao.jpg" alt="Paraíso amazônico em Alter do Chão (PA)" onclick="abrirModal(this)" />
+      </div>
+    </section>
+
+    <section>
+      <h3>🏞️ Centro-Oeste e Sudeste</h3>
+      <div class="galeria">
+        <img src="imagens/chapada_dos_guimaraes.jpg" alt="Chapada dos Guimarães (MT)" onclick="abrirModal(this)" />
+        <img src="imagens/pantanal.jpg" alt="Biodiversidade do Pantanal (MS)" onclick="abrirModal(this)" />
+        <img src="imagens/rio_de_janeiro.jpg" alt="Cristo Redentor e Pão de Açúcar (RJ)" onclick="abrirModal(this)" />
+      </div>
+    </section>
+
+    <section>
+      <h3>🏔️ Sul</h3>
+      <div class="galeria">
+        <img src="imagens/gramado.jpg" alt="Natal Luz em Gramado (RS)" onclick="abrirModal(this)" />
+        <img src="imagens/curitiba_jardim_botanico.jpg" alt="Jardim Botânico de Curitiba (PR)" onclick="abrirModal(this)" />
+        <img src="imagens/floripa.jpg" alt="Praias de Florianópolis (SC)" onclick="abrirModal(this)" />
+      </div>
+    </section>
+
+    <section>
+      <h3>🌿 Extras culturais ou naturais</h3>
+      <div class="galeria">
+        <img src="imagens/amazonia.jpg" alt="Floresta Amazônica" onclick="abrirModal(this)" />
+        <img src="imagens/iguacu_cataratas.jpg" alt="Cataratas do Iguaçu" onclick="abrirModal(this)" />
+        <img src="imagens/bonito.jpg" alt="Grutas e rios cristalinos de Bonito (MS)" onclick="abrirModal(this)" />
+      </div>
+    </section>
+  </main>
+
+  <button onclick="alternarModoEscuro()">Modo Escuro</button>
+
+  <div id="modal" class="modal" onclick="fecharModal()">
+    <img id="modalImg" alt="Imagem ampliada" />
+    <p id="descricao"></p>
+  </div>
+</body>
+</html>
