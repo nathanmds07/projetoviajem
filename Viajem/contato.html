@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contato - Viagens e Turismo</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Viagens e Turismo – Descobrindo o Brasil</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contato</h2>
+    <form id="form-contato" onsubmit="validarFormulario(event)">
+      <input type="text" id="nome" name="nome" placeholder="Nome" />
+      <input type="email" id="email" name="email" placeholder="E-mail" />
+      <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <button onclick="alternarModoEscuro()">Modo Escuro</button>
+</body>
+</html>
