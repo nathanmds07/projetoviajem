@@ -9,8 +9,8 @@ O site simula uma empresa fictícia chamada **ExploraBrasil Viagens**, oferecend
 
 O projeto é composto por 4 páginas principais:
 
-  **index.html**: Página inicial com uma saudação dinâmica e informações sobre Florianópolis.
-  **sobre.html**: Página com informações sobre a empresa fictícia ExploraBrasil Viagens, curiosidades e cultura do Brasil, e um botão “Mostrar mais” que revela conteúdo extra usando JavaScript.
+-  **index.html**: Página inicial com uma saudação dinâmica e informações sobre Florianópolis.
+-  **sobre.html**: Página com informações sobre a empresa fictícia ExploraBrasil Viagens, curiosidades e cultura do Brasil, e um botão “Mostrar mais” que revela conteúdo extra usando JavaScript.
   **galeria.html**: Galeria de imagens com destinos turísticos divididos por regiões, que abre um modal ao clicar nas imagens, permitindo navegar entre elas com setas.
   **contato.html**: Formulário de contato com validação simples, onde o usuário pode enviar nome, e-mail e mensagem.
 
