@@ -2,13 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Sobre - Viagens e Turismo</title>
+  <title>Sobre - ExploraBrasil Viagens</title>
   <link rel="stylesheet" href="css/estilo.css" />
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Viagens e Turismo – Descobrindo o Brasil</h1>
+    <div class="logo-container">
+      <img src="imagens/logo-explorabrasil.png" alt="Logo ExploraBrasil Viagens" class="logo" />
+      <h1>ExploraBrasil Viagens</h1>
+    </div>
     <nav>
       <a href="index.html">Início</a>
       <a href="sobre.html">Sobre</a>
@@ -17,18 +20,34 @@
     </nav>
   </header>
   <main>
-    <h2>Sobre o Projeto</h2>
-    <p>Bem-vindo ao “Viagens e Turismo – Descobrindo o Brasil”! Este site foi criado com o objetivo de apresentar os destinos mais incríveis e diversificados do nosso país, valorizando tanto as belezas naturais quanto a riqueza cultural brasileira.</p>
-  
-    <h3>Curiosidades e Cultura do Brasil</h3>
-    <p>O Brasil é um país que encanta com sua diversidade. Do Norte ao Sul, encontramos uma variedade enorme de paisagens, tradições e sabores. Você sabia que o Brasil possui mais de 20 biomas diferentes? Isso significa que temos desde florestas tropicais densas até campos áridos e serras geladas.</p>
-    <p>Além disso, nossa cultura é um caldeirão formado por influências indígenas, africanas e europeias, o que torna nossas festas, culinária e música únicas no mundo.</p>
-  
+    <h1>Sobre o Projeto</h1>
+    <h3>
+      A ExploraBrasil Viagens é uma empresa fictícia que oferece experiências incríveis para
+      você conhecer os melhores destinos turísticos do Brasil. Nosso objetivo é inspirar a
+      descoberta das riquezas culturais e naturais do nosso país.
+    </h3>
+
+    <h1>Curiosidades e Cultura do Brasil</h1>
+    <h3>
+      O Brasil é um país de dimensões continentais, com uma diversidade cultural única,
+      que mistura influências indígenas, africanas, europeias e asiáticas. Cada região
+      possui suas tradições, culinária, festas populares e belezas naturais distintas.
+    </h3>
+
     <button id="btn-toggle" onclick="toggleConteudo()">Mostrar mais</button>
     <div id="conteudo-extra" style="display:none;">
-      <p>O Carnaval do Brasil é uma das maiores festas populares do planeta, atraindo turistas do mundo inteiro para cidades como Rio de Janeiro, Salvador e Recife.</p>
-      <p>Nosso folclore é rico em histórias como a do Saci-Pererê e do Curupira, personagens que fazem parte da tradição oral das regiões mais remotas do país.</p>
-      <p>Por fim, o Brasil é lar de algumas das maiores florestas tropicais, rios e cachoeiras do planeta, além de abrigar povos indígenas com culturas e línguas únicas que preservam o conhecimento ancestral.</p>
+      <h2>O projeto utiliza JavaScript para melhorar a interação do usuário com funcionalidades importantes:</h2>
+
+      <h3>Exibe uma mensagem de saudação personalizada conforme o horário do dia.</h3>
+        <h1></h1>
+        <h3> Controla um botão “Mostrar mais” que revela ou oculta conteúdo extra na página Sobre.</h3>
+        <h1></h1>
+        <h3> Abre um modal para ampliar imagens da galeria, com navegação por setas.</h3>
+        <h1></h1>
+        <h3> Valida os campos do formulário de contato antes do envio, garantindo preenchimento correto.</h3>
+        <h1></h1>
+        <h3>Alterna o modo escuro da página para melhor conforto visual.</h3>
+      
     </div>
   </main>
   <button onclick="alternarModoEscuro()">Modo Escuro</button>

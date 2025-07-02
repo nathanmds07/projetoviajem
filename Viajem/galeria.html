@@ -2,13 +2,18 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Galeria</title>
+  <title>Galeria - ExploraBrasil Viagens</title>
   <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#68621a" />
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Galeria de Destinos</h1>
+    <div class="logo-container">
+      <img src="imagens/logo-explorabrasil.png" alt="Logo ExploraBrasil Viagens" class="logo" />
+      <h1>ExploraBrasil Viagens</h1>
+    </div>
     <nav>
       <a href="index.html">Início</a>
       <a href="sobre.html">Sobre</a>
@@ -23,48 +28,48 @@
     <section>
       <h3>🌅 Norte e Nordeste</h3>
       <div class="galeria">
-        <img src="imagens/maragogi.jpg" alt="Maragogi (AL) - Conhecida como o Caribe brasileiro, com águas cristalinas e piscinas naturais." />
-        <img src="imagens/jericoacoara.jpg" alt="Jericoacoara (CE) - Destino rústico com dunas, lagoas e pôr do sol incrível nas dunas." />
-        <img src="imagens/lencois_maranhenses.jpg" alt="Lençóis Maranhenses (MA) - Paisagem única de dunas brancas com lagoas de água doce." />
+        <img src="imagens/maragogi.jpg" alt="Maragogi (AL) - Conhecida como o Caribe brasileiro, com águas cristalinas e piscinas naturais." onclick="abrirModal(this)" />
+        <img src="imagens/jericoacoara.jpg" alt="Jericoacoara (CE) - Dunas, lagoas e pôr do sol inesquecível." onclick="abrirModal(this)" />
+        <img src="imagens/lencois_maranhenses.jpg" alt="Lençóis Maranhenses (MA) - Dunas e lagoas de água doce." onclick="abrirModal(this)" />
       </div>
     </section>
 
     <section>
       <h3>🏞️ Centro-Oeste e Sudeste</h3>
       <div class="galeria">
-        <img src="imagens/chapada_dos_guimaraes.jpg" alt="Chapada dos Guimarães (MT) - Belas formações rochosas, cachoeiras e trilhas ecológicas." />
-        <img src="imagens/pantanal.jpg" alt="Pantanal (MS) - Maior planície alagável do mundo, riquíssima em biodiversidade." />
-        <img src="imagens/rio_de_janeiro.jpg" alt="Rio de Janeiro (RJ) - Famosa pelo Cristo Redentor, praias e o Pão de Açúcar." />
+        <img src="imagens/chapada_dos_guimaraes.jpg" alt="Chapada dos Guimarães (MT) - Cachoeiras e trilhas." onclick="abrirModal(this)" />
+        <img src="imagens/pantanal.jpg" alt="Pantanal (MS) - Biodiversidade e natureza." onclick="abrirModal(this)" />
+        <img src="imagens/rio_de_janeiro.jpg" alt="Rio de Janeiro (RJ) - Cristo Redentor e praias." onclick="abrirModal(this)" />
       </div>
     </section>
 
     <section>
       <h3>🏔️ Sul</h3>
       <div class="galeria">
-        <img src="imagens/gramado.jpg" alt="Gramado (RS) - Cidade charmosa com influência europeia e decoração temática." />
-        <img src="imagens/curitiba_jardim_botanico.jpg" alt="Curitiba (PR) - O Jardim Botânico é um dos principais cartões-postais da cidade." />
-        <img src="imagens/floripa.jpg" alt="Florianópolis (SC) - Ilha com belas praias, trilhas e cultura açoriana." />
+        <img src="imagens/gramado.jpg" alt="Gramado (RS) - Cidade charmosa com influência europeia." onclick="abrirModal(this)" />
+        <img src="imagens/curitiba_jardim_botanico.jpg" alt="Curitiba (PR) - Jardim Botânico." onclick="abrirModal(this)" />
+        <img src="imagens/floripa.jpg" alt="Florianópolis (SC) - Ilha da Magia." onclick="abrirModal(this)" />
       </div>
     </section>
 
     <section>
       <h3>🌿 Extras culturais ou naturais</h3>
       <div class="galeria">
-        <img src="imagens/amazonia.jpg" alt="Amazônia - Maior floresta tropical do mundo, essencial para o clima global." />
-        <img src="imagens/iguacu_cataratas.jpg" alt="Cataratas do Iguaçu - Uma das maiores quedas d'água do mundo, na fronteira com a Argentina." />
-        <img src="imagens/bonito.jpg" alt="Bonito (MS) - Famoso por rios cristalinos, grutas e ecoturismo." />
+        <img src="imagens/amazonia.jpg" alt="Amazônia - Maior floresta tropical do mundo." onclick="abrirModal(this)" />
+        <img src="imagens/iguacu_cataratas.jpg" alt="Cataratas do Iguaçu - Quedas impressionantes." onclick="abrirModal(this)" />
+        <img src="imagens/bonito.jpg" alt="Bonito (MS) - Rios cristalinos e grutas." onclick="abrirModal(this)" />
       </div>
     </section>
   </main>
 
   <button onclick="alternarModoEscuro()">Modo Escuro</button>
 
-  <!-- Modal com setas e botão fechar -->
-  <div id="modal" class="modal">
-    <button id="btn-fechar" title="Fechar">×</button>
-    <button class="modal-btn" id="btn-prev" title="Imagem anterior">&#10094;</button>
+  <!-- Modal com setas -->
+  <div id="modal" class="modal" onclick="fecharModal()">
+    <button id="btn-fechar" onclick="fecharModal(event)">×</button>
+    <button id="btn-prev" class="modal-btn" onclick="imagemAnterior(event)">‹</button>
     <img id="modalImg" alt="Imagem ampliada" />
-    <button class="modal-btn" id="btn-next" title="Próxima imagem">&#10095;</button>
+    <button id="btn-next" class="modal-btn" onclick="proximaImagem(event)">›</button>
     <p id="descricao"></p>
   </div>
 </body>
